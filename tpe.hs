@@ -30,9 +30,9 @@ parse_time tpls = prs
 
 samples :: [(String,TimeOfDay)]
 samples =
-    [ f "00:00:00"            00 00 0
-    , f "23:59:59"            23 59 59000000000000
-    , f "00:00:00.1234567890" 00 00 00123456789000
+    [ f "00:00:00"            00 00   0
+    , f "23:59:59"            23 59   59
+    , f "00:00:00.1234567890" 00 00 $ 123456789 / 1000000000
     ]
   where
-    f s h m ps = (s,TimeOfDay h m $ fromInteger ps)
+    f s h m ps = (s,TimeOfDay h m ps)
