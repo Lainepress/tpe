@@ -1,0 +1,40 @@
+Name:                   tpe
+Version:                0.0.0.1
+Synopsis:               Experimenting with time parsers
+Author:                 Chris Dornan
+License:                BSD3
+Maintainer:             chris.dornan@irisconnect.co.uk
+Copyright:              Chris Dornan
+Category:               Text
+Build-type:             Simple
+
+Cabal-version:          >= 1.14
+
+Executable tpe
+    Hs-Source-Dirs:     .
+
+    Main-is: tpe.hs
+
+    Default-Language:   Haskell2010
+    GHC-Options:
+        -Wall
+        -fwarn-tabs
+
+    Build-depends:
+        base                    >= 4
+      , time                    >= 1.5.0.1
+
+Test-Suite tpe-test
+    type:               exitcode-stdio-1.0
+    Hs-Source-Dirs:     .
+
+    Main-is: tpe.hs
+
+    Default-Language:   Haskell2010
+    GHC-Options:
+        -Wall
+        -fwarn-tabs
+
+    Build-depends:
+        base                    >= 4
+      , time                    >= 1.5.0.1

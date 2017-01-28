@@ -1,0 +1,6 @@
+Test suite tpe-test: RUNNING...
+passed: 00:00:00
+passed: 23:59:59
+passed: 00:00:00.123456789
+Test suite tpe-test: PASS
+Test suite logged to: dist/test/tpe-0.0.0.1-tpe-test.log
