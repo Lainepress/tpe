@@ -35,4 +35,4 @@ samples =
     , f "00:00:00.1234567890" 00 00 00123456789000
     ]
   where
-    f s h m ps = (s,TimeOfDay h m $ toEnum ps)
+    f s h m ps = (s,TimeOfDay h m $ fromInteger ps)
